@@ -18,6 +18,8 @@ function exactMatch(drivers, property) {
 }
 
 function exactMatchToList(drivers, property) {
-  const d = exactMatch(drivers, property)
+  const d = exactMatch(drivers, property);
+  const names  = d.map(function(b) { return b.name });
+	return names;
 }
 
