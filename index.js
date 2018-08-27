@@ -18,8 +18,6 @@ function exactMatch(drivers, property) {
 }
 
 function exactMatchToList(drivers, property) {
-  const key = Object.keys(property)
-  const d = drivers.filter(function(driver) {return driver[key] === property[key]})
-  return d;
+  const d = exactMatch(drivers, property)
 }
 
